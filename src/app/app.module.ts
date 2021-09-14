@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterMenuComponent } from './footer-menu/footer-menu.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { UserComponent } from './user/user.component';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UserComponent } from './user/user.component';
     SidebarComponent,
     FooterMenuComponent,
     ListUserComponent,
-    UserComponent
+    UserComponent,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,
