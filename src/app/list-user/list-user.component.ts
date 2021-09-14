@@ -6,19 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-user.component.css']
 })
 export class ListUserComponent implements OnInit {
-  userList = ['foo','bar', 'ram', 'foobar','more']; // *ngFor
- 
+  userList = ['foo', 'bar', 'ram', 'foobar', 'more']; // *ngFor
+
   addesss = {
     laneNo: '450',
     Location: 'Pune',
     city: 'BAN'
   };
 
-  title : string = 'Welcome to angular session';
+  title: string = 'Welcome to angular session';
+
+  childRecivedData: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getUpdateName(data: any) {
+    this.childRecivedData = data;
   }
 
 }

@@ -1,6 +1,11 @@
 <p>I am in list-user Component!</p>
 <div class="list">
-    <LT-user [userInfo]="'Surekha'" [userAddress]="addesss" ></LT-user>
+    {{childRecivedData}}
+    <LT-user 
+    [userInfo]="'Ram'" 
+    [userAddress]="addesss" 
+    (userNameChanged)="getUpdateName($event)"
+    ></LT-user> // .html file
     
 
     
