@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-user.component.css']
 })
 export class ListUserComponent implements OnInit {
+  isUnchanged = true;
+  itemImageUrl = "./assets/user.png";
+
   userList = ['foo', 'bar', 'ram', 'foobar', 'more']; // *ngFor
 
   addesss = {
@@ -18,6 +21,8 @@ export class ListUserComponent implements OnInit {
 
   childRecivedData: string = '';
 
+  twoWayExm : any;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -25,6 +30,14 @@ export class ListUserComponent implements OnInit {
 
   getUpdateName(data: any) {
     this.childRecivedData = data;
+  }
+
+  handleClick() {
+    alert('button is cliked')
+  }
+
+  callPhone(phone: string) {
+    alert(phone)
   }
 
 }
