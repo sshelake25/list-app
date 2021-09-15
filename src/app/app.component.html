@@ -1,8 +1,13 @@
 
 
+<img [src]="imageUrl1 | avatar:defaultUrl"  width="50" height="50"/>
+<br>
+
+<img [src]="imageUrl2 | avatar:defaultUrl"  width="50" height="50"/>
+
 <div> {{ tobeConverted | uppercase }}</div>
 
-<div> {{todaysDate | date }} </div>
+<div> {{todaysDate | date:'short' | uppercase }} </div>
 
 
 <p *ngIf="true"> This will only visible if condition is true </p>

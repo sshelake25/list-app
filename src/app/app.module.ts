@@ -22,6 +22,7 @@ import { HooksComponent } from './hooks/hooks.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { UnlessDirective } from './directives/unless.directive';
 import { DemoPipe } from './pipes/demo.pipe';
+import { AvatarPipe } from './pipes/avatar.pipe';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { DemoPipe } from './pipes/demo.pipe';
     HooksComponent,
     HighlightDirective,
     UnlessDirective,
-    DemoPipe
+    DemoPipe,
+    AvatarPipe
   ],
   imports: [
     BrowserModule,

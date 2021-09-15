@@ -12,6 +12,11 @@ export class AppComponent {
   
   todaysDate = new Date();
 
+  imageUrl1 = './assets/user.png';
+  imageUrl2 = '';
+  defaultUrl = './assets/default.png';
+
+
   // bussiness logic
   // 
 
