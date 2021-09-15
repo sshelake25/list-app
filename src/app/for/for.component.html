@@ -1,13 +1,20 @@
-
 <p>for works!</p>
 
+<span *ngIf="!isPresent">
+ <h2> I have data with me </h2>
+</span>
+
 <ul>
-    <li *ngFor="let person of people; let i = index">
-      {{ i + 1 }} - {{ person.name }}
-    </li>
-  </ul>
+  <li *ngFor="let person of people; let i = index">
+    
+    <span *ngIf="person.age > 25">
+      {{ i + 1 }} - name: {{ person.name }} age: {{person.age}}
+    </span>
+ 
+  </li>
+</ul>
 
 <!-- *ngFor -->
-<h6 *ngFor="let number of numberList" >
+<!-- <h6 *ngFor="let number of numberList" >
 {{ number }}
-</h6>
+</h6> -->

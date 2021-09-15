@@ -8,21 +8,24 @@ import { Component, OnInit } from '@angular/core';
 export class ForComponent implements OnInit {
   numberList = ['one','two','three','four']; 
 
+  isPresent = false;
+
   people: any[] = [
     {
-      "name": "Douglas  Pace"
+      "name": "Douglas  Pace",
+      "age": 20
     },
     {
-      "name": "Mcleod  Mueller"
+      "name": "Mcleod  Mueller",
+      "age": 25
     },
     {
-      "name": "Day  Meyers"
+      "name": "Day  Meyers",
+      "age": 30
     },
     {
-      "name": "Aguirre  Ellis"
-    },
-    {
-      "name": "Cook  Tyson"
+      "name": "Aguirre  Ellis",
+      "age": 40
     }
   ];
 
