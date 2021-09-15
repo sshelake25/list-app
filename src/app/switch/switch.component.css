@@ -1,0 +1,15 @@
+.text-success {
+    background-color: green;
+}
+
+.text-primary {
+    background-color: blue;
+}
+
+.text-danger {
+    background-color:  red;
+}
+
+.text-warning {
+    background-color: yellow;
+}

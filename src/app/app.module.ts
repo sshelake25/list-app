@@ -16,6 +16,7 @@ import { MultislotComponent } from './multislot/multislot.component';
 import { ForComponent } from './for/for.component';
 import { Demo1Directive } from './directives/demo1.directive';
 import { Demo2Directive } from './directives/demo2.directive';
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { Demo2Directive } from './directives/demo2.directive';
     MultislotComponent,
     ForComponent,
     Demo1Directive,
-    Demo2Directive
+    Demo2Directive,
+    SwitchComponent
   ],
   imports: [
     BrowserModule,
