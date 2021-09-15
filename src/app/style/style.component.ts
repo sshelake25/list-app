@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'LT-switch',
-  templateUrl: './switch.component.html',
-  styleUrls: ['./switch.component.css']
+  selector: 'LT-style',
+  templateUrl: './style.component.html',
+  styleUrls: ['./style.component.css']
 })
-export class SwitchComponent implements OnInit {
+export class StyleComponent implements OnInit {
+
   people: any[] = [
     {
       "name": "Douglas  Pace",
@@ -46,7 +47,7 @@ export class SwitchComponent implements OnInit {
         return 'yellow';
     }
   }
-
+  
   constructor() { }
 
   ngOnInit(): void {
