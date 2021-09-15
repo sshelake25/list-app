@@ -18,6 +18,7 @@ import { Demo1Directive } from './directives/demo1.directive';
 import { Demo2Directive } from './directives/demo2.directive';
 import { SwitchComponent } from './switch/switch.component';
 import { StyleComponent } from './style/style.component';
+import { HooksComponent } from './hooks/hooks.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { StyleComponent } from './style/style.component';
     Demo1Directive,
     Demo2Directive,
     SwitchComponent,
-    StyleComponent
+    StyleComponent,
+    HooksComponent
   ],
   imports: [
     BrowserModule,
