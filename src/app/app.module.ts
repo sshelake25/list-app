@@ -14,6 +14,8 @@ import { ZippyComponent } from './zippy/zippy.component';
 import { AsyncExampleComponent } from './async-example/async-example.component';
 import { MultislotComponent } from './multislot/multislot.component';
 import { ForComponent } from './for/for.component';
+import { Demo1Directive } from './directives/demo1.directive';
+import { Demo2Directive } from './directives/demo2.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ForComponent } from './for/for.component';
     ZippyComponent,
     AsyncExampleComponent,
     MultislotComponent,
-    ForComponent
+    ForComponent,
+    Demo1Directive,
+    Demo2Directive
   ],
   imports: [
     BrowserModule,
