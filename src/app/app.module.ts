@@ -11,6 +11,10 @@ import { ListUserComponent } from './list-user/list-user.component';
 import { UserComponent } from './user/user.component';
 import { ZippyComponent } from './zippy/zippy.component';
 
+import { AsyncExampleComponent } from './async-example/async-example.component';
+import { MultislotComponent } from './multislot/multislot.component';
+import { ForComponent } from './for/for.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +24,10 @@ import { ZippyComponent } from './zippy/zippy.component';
     FooterMenuComponent,
     ListUserComponent,
     UserComponent,
-    ZippyComponent
+    ZippyComponent,
+    AsyncExampleComponent,
+    MultislotComponent,
+    ForComponent
   ],
   imports: [
     BrowserModule,
