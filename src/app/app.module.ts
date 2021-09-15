@@ -21,6 +21,7 @@ import { StyleComponent } from './style/style.component';
 import { HooksComponent } from './hooks/hooks.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { UnlessDirective } from './directives/unless.directive';
+import { DemoPipe } from './pipes/demo.pipe';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { UnlessDirective } from './directives/unless.directive';
     StyleComponent,
     HooksComponent,
     HighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    DemoPipe
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'contact-list';
 
+  tobeConverted = 'Hello amm sss W s foo BBA';
+  
+  todaysDate = new Date();
+
   // bussiness logic
   // 
 
