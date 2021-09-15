@@ -20,6 +20,7 @@ import { SwitchComponent } from './switch/switch.component';
 import { StyleComponent } from './style/style.component';
 import { HooksComponent } from './hooks/hooks.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { UnlessDirective } from './directives/unless.directive';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HighlightDirective } from './directives/highlight.directive';
     SwitchComponent,
     StyleComponent,
     HooksComponent,
-    HighlightDirective
+    HighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
