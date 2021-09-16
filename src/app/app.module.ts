@@ -27,7 +27,8 @@ import { DemoPipe } from './pipes/demo.pipe';
 import { AvatarPipe } from './pipes/avatar.pipe';
 import { ConfigService } from './services/config.service';
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TemplateFormComponent } from './forms/template-form/template-form.component';
 
 @NgModule({
   declarations: [
@@ -51,13 +52,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     UnlessDirective,
     DemoPipe,
     AvatarPipe,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     ConfigService
