@@ -1,12 +1,32 @@
 <div class="main-form">
     <p>reactive-form works!</p>
 
-    <pre>{{profileForm.value | json}}</pre>
 
-    <form novalidate [formGroup]="profileForm"  (ngSubmit)="onSubmit()">
+
+    <!-- <pre>{{profileForm.value | json}}</pre> -->
+
+    <form novalidate [formGroup]="profileForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
-            <label>First Name</label>
+
+            <label>First Name </label>
+
+
+            <!-- <pre>Valid? {{profileForm.controls.firstName.valid }}</pre>
+          <pre>inValid? {{profileForm.controls.firstName.invalid }}</pre>
+          <pre>Dirty? {{profileForm.controls.firstName.dirty }}</pre>
+          <pre>pristine? {{profileForm.controls.firstName.pristine }}</pre>
+          <pre>touched? {{profileForm.controls.firstName.touched }}</pre>
+          <pre>untouched? {{profileForm.controls.firstName.untouched }}</pre> -->
+
+
             <input type="text" class="form-control" formControlName="firstName">
+
+
+            <div class="form-control-feedback"
+                *ngIf="profileForm.controls.firstName.errors && (profileForm.controls.firstName.dirty || profileForm.controls.firstName.touched)">
+                <p *ngIf="profileForm.controls.firstName.errors.required">First Name is required</p>
+            </div>
+
         </div>
 
         <div class="form-group">
@@ -22,6 +42,11 @@
         <div class="form-group">
             <label>Password</label>
             <input type="password" class="form-control" formControlName="password">
+            <div class="form-control-feedback"
+                *ngIf="profileForm.controls.password.errors && (profileForm.controls.password.dirty || profileForm.controls.password.touched)">
+                <p *ngIf="profileForm.controls.password.errors.required">password is required</p>
+                <p *ngIf="profileForm.controls.password.errors.minlength">Please enter password of min 8 char</p>
+            </div>
         </div>
 
         <div class="form-group">

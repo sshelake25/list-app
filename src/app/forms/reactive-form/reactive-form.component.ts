@@ -10,13 +10,15 @@ export class ReactiveFormComponent implements OnInit {
   langs: string[] = ["English", "French", "German"];
 
   profileForm = new FormGroup({
-    firstName: new FormControl(""),
-    lastName: new FormControl("s"),
-    email: new FormControl(""),
-    password: new FormControl("12345"),
+    firstName: new FormControl("", Validators.required),
+    lastName: new FormControl("s", Validators.required),
+    email: new FormControl("", Validators.email),
+    password: new FormControl("", [
+      Validators.required,
+      Validators.minLength(8)
+    ]),
     language: new FormControl(""),
   });
-
 
   constructor() { }
 
@@ -25,7 +27,7 @@ export class ReactiveFormComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.profileForm.value)
+    console.log(this.profileForm)
   }
 
 }
