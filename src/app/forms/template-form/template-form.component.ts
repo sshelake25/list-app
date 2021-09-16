@@ -25,4 +25,8 @@ export class TemplateFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit() {
+    console.log(this.model);
+    //api request store value db
+  }
 }

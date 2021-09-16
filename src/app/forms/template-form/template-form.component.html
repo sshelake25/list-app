@@ -1,27 +1,44 @@
 <div class="main-form">
     <p>template-form works!</p>
 
-    <form novalidate #f="ngForm">
+    <form novalidate #f="ngForm" (ngSubmit)="onSubmit()">
         <pre>{{f.value | json}}</pre>
 
         <div class="form-group">
             <label>First Name</label>
-            <input name="fname" [(ngModel)]="model.fname" #fname="ngModel" type="text" class="form-control">
+            <input name="fname" [(ngModel)]="model.fname" #fname="ngModel" required type="text" class="form-control">
+
+            <div class="form-control-feedback" *ngIf="fname.errors && (fname.dirty || fname.touched)">
+                <p *ngIf="fname.errors.required">First name is required</p>
+            </div>
         </div>
 
         <div class="form-group">
             <label>Last Name</label>
-            <input name="lname" [(ngModel)]="model.lname" #lname="ngModel" type="text" class="form-control">
+            <input name="lname" [(ngModel)]="model.lname" #lname="ngModel" type="text" required class="form-control">
+
+
+            <div class="form-control-feedback" *ngIf="lname.errors && (lname.dirty || lname.touched)">
+                <p *ngIf="lname.errors.required">Last name is required</p>
+            </div>
+
         </div>
         <div class="form-group">
             <label>Email</label>
             <input name="email" [(ngModel)]="model.email" #email="ngModel" type="email" class="form-control">
         </div>
+
         <div class="form-group">
             <label>Password</label>
-            <input name="password" [(ngModel)]="model.password" #password="ngModel" type="password"
-                class="form-control">
+            <input name="password" [(ngModel)]="model.password" #password="ngModel" required minlength="8"
+                type="password" class="form-control">
+
+            <div class="form-control-feedback" *ngIf="password.errors && (password.dirty || password.touched)">
+                <p *ngIf="password.errors.required">Password is required</p>
+                <p *ngIf="password.errors.minlength">Password must be at least 8 characters long</p>
+            </div>
         </div>
+
         <div class="form-group">
             <label>Language</label>
             <select name="lang" [(ngModel)]="model.lang" #lang="ngModel" class="form-control">
@@ -31,5 +48,7 @@
                 </option>
             </select>
         </div>
+        <br>
+        <button type="submit">Submit</button>
     </form>
 </div>
