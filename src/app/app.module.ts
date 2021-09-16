@@ -26,6 +26,7 @@ import { UnlessDirective } from './directives/unless.directive';
 import { DemoPipe } from './pipes/demo.pipe';
 import { AvatarPipe } from './pipes/avatar.pipe';
 import { ConfigService } from './services/config.service';
+import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ConfigService } from './services/config.service';
     HighlightDirective,
     UnlessDirective,
     DemoPipe,
-    AvatarPipe
+    AvatarPipe,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
