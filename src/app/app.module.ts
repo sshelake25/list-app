@@ -23,6 +23,7 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { UnlessDirective } from './directives/unless.directive';
 import { DemoPipe } from './pipes/demo.pipe';
 import { AvatarPipe } from './pipes/avatar.pipe';
+import { ConfigService } from './services/config.service';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,9 @@ import { AvatarPipe } from './pipes/avatar.pipe';
     AppRoutingModule,
     //
   ],
-  providers: [],
+  providers: [
+    ConfigService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
