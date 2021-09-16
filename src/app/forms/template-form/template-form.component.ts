@@ -6,6 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./template-form.component.css']
 })
 export class TemplateFormComponent implements OnInit {
+  langs: string[] = [
+    'English',
+    'French',
+    'German',
+  ];
+
+  model = {
+    email:'',
+    fname:'',
+    lname:'',
+    password:'',
+    lang:''
+  }
 
   constructor() { }
 

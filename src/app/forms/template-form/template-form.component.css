@@ -1,0 +1,9 @@
+
+.main-form {
+    width: 40%;
+     margin: auto;
+  }
+  
+  .form-control-feedback {
+    border: 1px solid red;
+  }
