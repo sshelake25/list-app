@@ -34,10 +34,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
 import { InfromationComponent } from './infromation/infromation.component';
 
-const appRoutes: Routes = [
-  { path: 'about-us', component: AboutUsComponent   },
-  { path: 'my-blog', component: BlogComponent   }
-];
+
 
 @NgModule({
   declarations: [
@@ -72,8 +69,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes)
+    FormsModule
   ],
   providers: [
     ConfigService
