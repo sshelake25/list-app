@@ -10,6 +10,7 @@ import { TemplateFormComponent } from './forms/template-form/template-form.compo
 import { InfromationComponent } from './infromation/infromation.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { ParentrouteComponent } from './parentroute/parentroute.component';
+import { UserGuard } from './user.guard';
 import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
     data: {
       title: 'Heroes List',
       color: 'Green'
-    }
+    },
+    canActivate: [UserGuard],
   },
   
   {
