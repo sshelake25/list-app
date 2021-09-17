@@ -10,8 +10,24 @@ import { ListUserComponent } from './list-user/list-user.component';
 import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
-  { path: 'about-us', component: AboutUsComponent },
-  { path: 'blog', component: BlogComponent },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+    data: {
+      title: 'Heroes List',
+      color: 'Green'
+    }
+  },
+  
+  {
+    path: 'blog',
+    component: BlogComponent,
+    data: {
+      title: 'Heroes List',
+      color: 'Green'
+    }
+  },
+
   { path: 'info', component: InfromationComponent },
   { path: 'list', component: ListUserComponent },
   { path: 'user', component: UserComponent },
