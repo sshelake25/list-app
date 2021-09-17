@@ -2,3 +2,8 @@
 .more {
     border: 1px solid red;
 }
+
+.main {
+    min-height: 500px;
+    border: 1px solid ghostwhite;
+}
