@@ -29,6 +29,15 @@ import { ConfigService } from './services/config.service';
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
+import { RouterModule, Routes } from '@angular/router';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { BlogComponent } from './blog/blog.component';
+import { InfromationComponent } from './infromation/infromation.component';
+
+const appRoutes: Routes = [
+  { path: 'about-us', component: AboutUsComponent   },
+  { path: 'my-blog', component: BlogComponent   }
+];
 
 @NgModule({
   declarations: [
@@ -53,14 +62,18 @@ import { TemplateFormComponent } from './forms/template-form/template-form.compo
     DemoPipe,
     AvatarPipe,
     ReactiveFormComponent,
-    TemplateFormComponent
+    TemplateFormComponent,
+    AboutUsComponent,
+    BlogComponent,
+    InfromationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [
     ConfigService

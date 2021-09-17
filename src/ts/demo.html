@@ -1,19 +1,53 @@
-<formnovalidate>
-    <fieldset>
-        <divclass="form-group"><label>First Name</label>
-            <inputtype="text"class="form-control">
-                </div>
-                <divclass="form-group"><label>Last Name</label>
-                    <inputtype="text"class="form-control">
-                        </div>
-    </fieldset>
-    <divclass="form-group"><label>Email</label>
-        <inputtype="email"class="form-control">
-            </div>
-            <divclass="form-group"><label>Password</label>
-                <inputtype="password"class="form-control">
-                    </div>
-                    <divclass="form-group"><label>Language</label>
-                        <selectclass="form-control">
-                            <optionvalue="">Please select a language</option></select></div>
-                                </form>
+
+<h2>Template form </h2> 
+<LT-template-form></LT-template-form>
+
+<LT-zippy>
+    Zipp1
+</LT-zippy>
+
+
+<h2>Reactive form </h2> 
+<LT-reactive-form></LT-reactive-form>
+
+<img [src]="imageUrl1 | avatar:defaultUrl"  width="50" height="50"/>
+<br>
+
+<img [src]="imageUrl2 | avatar:defaultUrl"  width="50" height="50"/>
+
+<div> {{ tobeConverted | uppercase }}</div>
+
+<div> {{todaysDate | date:'short' | uppercase }} </div>
+
+
+<p *ngIf="true"> This will only visible if condition is true </p>
+
+<!-- revese like if directive -->
+<p *appUnless="false"> This will only visible unless directive condition is false </p>
+
+<h1 *appUnless="true">This is hello</h1>
+
+<p lTHighlight>dsdsadas </p>
+
+<!-- <LT-hooks></LT-hooks> -->
+
+<LT-style></LT-style>
+
+<LT-switch></LT-switch>
+
+<LT-for></LT-for>
+
+<app-multislot>
+  <p question>
+    This will go inside question
+  </p>
+
+  Single slot content projection
+
+</app-multislot>
+
+<LT-header></LT-header>
+
+<LT-list-user></LT-list-user>
+
+<LT-footer></LT-footer>
