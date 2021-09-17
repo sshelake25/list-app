@@ -36,8 +36,7 @@ import { InfromationComponent } from './infromation/infromation.component';
 import { ChildaComponent } from './childa/childa.component';
 import { ChildbComponent } from './childb/childb.component';
 import { ParentrouteComponent } from './parentroute/parentroute.component';
-
-
+import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard.module';
 
 @NgModule({
   declarations: [
@@ -75,7 +74,8 @@ import { ParentrouteComponent } from './parentroute/parentroute.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    CustomerDashboardModule
   ],
   providers: [
     ConfigService

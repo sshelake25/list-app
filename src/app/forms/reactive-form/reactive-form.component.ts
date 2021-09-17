@@ -24,9 +24,17 @@ export class ReactiveFormComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.profileForm)
+
+    localStorage.setItem('myname','surekha');
+    localStorage.getItem('myname');
+   
+    
+  
   }
 
   onSubmit() {
+    //JSON.stringify();;
+    localStorage.setItem("reactive-form", JSON.stringify(this.profileForm.value))
     console.log(this.profileForm)
   }
 

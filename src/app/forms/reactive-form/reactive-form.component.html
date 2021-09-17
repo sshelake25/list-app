@@ -5,7 +5,7 @@
 
     <!-- <pre>{{profileForm.value | json}}</pre> -->
 
-    <form novalidate [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <form novalidate [formGroup]="profileForm" >
         <div class="form-group">
 
             <label>First Name </label>
@@ -57,7 +57,7 @@
         </div>
         <br>
         <div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
 
         </div>
 
