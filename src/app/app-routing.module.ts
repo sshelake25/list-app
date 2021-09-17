@@ -21,8 +21,9 @@ const routes: Routes = [
       color: 'Green'
     }
   },
+  
   {
-    path: 'blog',
+    path: 'blog/:mymberr',
     component: BlogComponent,
     data: {
       title: 'Heroes List',

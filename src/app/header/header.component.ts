@@ -11,7 +11,7 @@ import { MockDataService } from '../services/mock-data.service';
   encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit {
-
+  cn = 12;
   constructor(
     private myConfigService: ConfigService,
     private data: MockDataService) { }
