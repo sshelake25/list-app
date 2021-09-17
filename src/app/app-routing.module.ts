@@ -18,7 +18,6 @@ const routes: Routes = [
       color: 'Green'
     }
   },
-  
   {
     path: 'blog',
     component: BlogComponent,

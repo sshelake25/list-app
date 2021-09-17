@@ -33,6 +33,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
 import { InfromationComponent } from './infromation/infromation.component';
+import { ChildaComponent } from './childa/childa.component';
+import { ChildbComponent } from './childb/childb.component';
+import { ParentrouteComponent } from './parentroute/parentroute.component';
 
 
 
@@ -62,7 +65,10 @@ import { InfromationComponent } from './infromation/infromation.component';
     TemplateFormComponent,
     AboutUsComponent,
     BlogComponent,
-    InfromationComponent
+    InfromationComponent,
+    ChildaComponent,
+    ChildbComponent,
+    ParentrouteComponent
   ],
   imports: [
     BrowserModule,
